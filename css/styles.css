@@ -1,0 +1,53 @@
+.reviewItem {
+	display: block;
+	width: 260px;
+	float: left;
+}
+
+.elementPopup {
+	display: none;
+}
+
+.dlPopup {
+	position: fixed;
+	padding: 20px 40px;
+	top: 20px;
+	left: 0;
+	width: 40%;
+	margin-left: 20%;
+	min-height: 50px;
+	z-index: 1001;
+	background: #fff;
+	display: none;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.dlPopupOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.1);
+	display: none;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+/* styles then pop-up open */
+.dlPopupOpen {
+	display: block;
+	opacity: 1;
+}
+
+.dlPopupOverlayOpen {
+	display: block;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.dlPopupBlur {
+	filter: blur(5px);
+}
